@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact form">
+    <meta name="author" content="Ramil Zeynalov">
+    <title>My Personal Website - Contact Me</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦇</text></svg>">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="schedule.html">Weekly Schedule</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <!-- <li><a href="questionnaire.html">Questionnaire</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Me 📧</h2>
+            <form action="mailto:rzeynalov20290@ada.edu.az" method="post" enctype="text/plain">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                
+                <div>
+                    <label>Preferred Contact Method:</label>
+                    <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                    <label for="contact-email">Email</label>
+                    
+                    <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                    <label for="contact-phone">Phone</label>
+                </div>
+                
+                <div>
+                    <label>Interests (select all that apply):</label><br>
+                    <input type="checkbox" id="interest-html" name="interests" value="html">
+                    <label for="interest-html">HTML</label><br>
+                    
+                    <input type="checkbox" id="interest-css" name="interests" value="css">
+                    <label for="interest-css">CSS</label><br>
+                    
+                    <input type="checkbox" id="interest-js" name="interests" value="javascript">
+                    <label for="interest-js">JavaScript</label>
+                </div>
+                
+                <div>
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="az">Azerbaijan</option>
+                        <option value="ru">Russia</option>
+                        <option value="ua">Ukraine</option>
+                        <option value="kz">Kazahstan</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="Enter your message here..."></textarea>
+                </div>
+                
+                <div>
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Clear Form">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Captsone Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
